@@ -1,6 +1,7 @@
-head {
+header {
   font-family: roboto;
   background-color: #0e9fff;
+  padding: 20px;
 }
 
 body {
