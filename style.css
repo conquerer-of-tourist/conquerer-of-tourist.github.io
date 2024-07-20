@@ -1,8 +1,8 @@
-header {
+/* header {
   font-family: roboto;
   background-color: #0e9fff;
   padding: 20px;
-}
+} */
 
 body {
   font-family: roboto;
@@ -12,6 +12,7 @@ body {
 h1 {
   text-align: center;
   color: #36ddab;
+  background-color: #0e9fff;
 }
 
 p {
