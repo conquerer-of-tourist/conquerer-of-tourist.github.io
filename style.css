@@ -11,18 +11,34 @@ body {
 
 h1 {
   text-align: center;
-  color: #36ddab;
+  color: #000000;
   background-color: #0e9fff;
   padding: 50px;
+  margin: -10px;
 }
 
 p {
   text-align: justify;
-  color: #474646;
-  margin: 20px;
+  color: #2f78ca;
+  margin: 30px;
 }
 
 ul {
     list-style-type: square;
     list-style-position: inside;
+    color: #ffffff;
+}
+
+.usacoSol {
+    background-color: #e2e3e4;
+    padding: 20px;
+    margin: 30px;
+}
+
+.ending {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: justify;
+    padding: 20px;
+    margin: -10px;
 }
