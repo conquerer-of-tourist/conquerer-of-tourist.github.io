@@ -4,7 +4,7 @@ header {
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: roboto;
   background-color: #222222;
 }
 
@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   color: #474646;
   margin: 20px;
 }
