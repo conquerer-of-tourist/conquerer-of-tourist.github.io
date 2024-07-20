@@ -18,3 +18,8 @@ p {
   color: #474646;
   margin: 20px;
 }
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
