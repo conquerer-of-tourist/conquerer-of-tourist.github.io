@@ -1,0 +1,15 @@
+body {
+  font-family: roboto;
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: #36ddab;
+}
+
+p {
+  text-align: center;
+  color: #969696;
+  margin: 20px;
+}
