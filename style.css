@@ -10,9 +10,10 @@ body {
 }
 
 h1 {
+    
   text-align: center;
   color: #000000;
-  background-color: #0e9fff;
+  background-image: linear-gradient(to right, red , yellow);
   padding: 50px;
   margin: -10px;
 }
@@ -23,14 +24,16 @@ p {
   margin: 30px;
   /*this is an extra thingy*/
   padding: 20px;
-  background-color: #a96868;
+  background-color: #71c1b8;
   border-radius: 10px;
+  line-height: 1.5
 }
 
 ul {
     list-style-type: square;
     list-style-position: inside;
     color: #ffffff;
+    line-height: 1.5;
 }
 
 .usacoSol {
@@ -59,5 +62,17 @@ ul {
 }
 
 .intro {
-    color: lightgray;
+    color: rgb(0, 0, 0);
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    background-color: burlywood;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
