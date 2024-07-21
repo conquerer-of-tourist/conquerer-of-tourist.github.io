@@ -19,8 +19,12 @@ h1 {
 
 p {
   text-align: justify;
-  color: #2f78ca;
+  color: #000000;
   margin: 30px;
+  /*this is an extra thingy*/
+  padding: 20px;
+  background-color: #a96868;
+  border-radius: 10px;
 }
 
 ul {
@@ -30,6 +34,7 @@ ul {
 }
 
 .usacoSol {
+    border-radius: 10px;
     background-color: #e2e3e4;
     padding: 20px;
     margin: 30px;
@@ -44,9 +49,15 @@ ul {
 }
 
 .sectionHeader {
+    border-radius: 10px;
     background-color: #f84a4a;
     color: #ffffff;
     text-align: center;
     padding: 20px;
     margin: 30px;
+    margin-bottom: -10px;
+}
+
+.intro {
+    color: lightgray;
 }
