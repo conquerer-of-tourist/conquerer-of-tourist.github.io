@@ -64,6 +64,7 @@ ul {
 
 .intro {
     color: rgb(0, 0, 0);
+    padding: 80px;
 }
 
 .column {
@@ -76,4 +77,15 @@ ul {
     content: "";
     display: table;
     clear: both;
+}
+
+.button1 {
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: darkcyan;
 }
