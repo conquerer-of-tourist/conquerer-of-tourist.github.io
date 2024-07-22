@@ -13,7 +13,8 @@ h1 {
     
   text-align: center;
   color: #000000;
-  background-image: linear-gradient(to right, red , yellow);
+  /* background-image: linear-gradient(to right, red , yellow); */
+  background-image: url('https://logospng.org/wp-content/uploads/c-plus-plus.png');
   padding: 50px;
   margin: -10px;
 }
