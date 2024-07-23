@@ -89,8 +89,9 @@ ul {
     display: inline-block;
     border-radius: 5px;
     transition-duration: 0.4s;
+    margin: 30px;
 }
 
-.button:hover {
+.button1:hover {
     background-color: darkcyan;
 }
