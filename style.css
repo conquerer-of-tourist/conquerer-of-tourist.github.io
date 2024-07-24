@@ -33,7 +33,7 @@ p {
   margin: 30px;
   /*this is an extra thingy*/
   padding: 20px;
-  background-color: #71c1b8;
+  background-color: #cfcfcf;
   border-radius: 10px;
   line-height: 1.5
 }
@@ -61,8 +61,9 @@ ul {
 }
 
 .sectionHeader {
+    background-image: url(https://wallpaperaccess.com/full/656336.png);
     border-radius: 10px;
-    background-color: #f84a4a;
+    /*background-color: #f84a4a;*/
     color: #ffffff;
     text-align: center;
     padding: 20px;
