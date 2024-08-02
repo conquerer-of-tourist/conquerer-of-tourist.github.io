@@ -112,6 +112,7 @@ ul {
     /* border: 10px solid #000000; */
     float: left;
     font-size: 16px;
+    font-family: 'JetBrains Mono';
 }
 
 .button1:hover {
