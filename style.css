@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter';
-  background-color: #222222;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -30,18 +30,22 @@ h1 {
 p {
   text-align: justify;
   color: #000000;
-  margin: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /*this is an extra thingy*/
-  padding: 20px;
-  background-color: #cfcfcf;
+  background-color: #e2e3e4;
   border-radius: 10px;
   line-height: 1.5
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: circle;
     list-style-position: inside;
-    color: #ffffff;
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -116,15 +120,16 @@ ul {
 }
 
 .button1:hover {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
+    background-color: rgb(65, 65, 65);
+    color: #ffffff;
 }
 
 hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 1px solid #bbb;
 }
 
 a {
+    margin-left: 50px;
     text-decoration: none;
     color: cadetblue;
     transition: 0.4s;
