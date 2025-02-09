@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatted C++ Code</title>
+
+    <!-- Prism.js CSS for Visual Studio Code Dark Theme -->
+    <link href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-vsc-dark-plus.css" rel="stylesheet">
+
+    <!-- Prism.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
+    <style>
+        /* Additional styling */
+        body {
+            font-family: 'Consolas', 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #569cd6; /* Title color */
+            text-align: center;
+        }
+
+        pre {
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatted C++ Program</h1>
+
+    <!-- Multi-line C++ Code Block -->
+    <pre><code class="language-cpp">
+// A simple C++ program
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+    </code></pre>
+
+    
+
+    <!-- Trigger Syntax Highlighting -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            Prism.highlightAll();
+        });
+    </script>
+</body>
+</html>

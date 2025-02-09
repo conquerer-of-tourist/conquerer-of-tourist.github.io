@@ -1,0 +1,85 @@
+body {
+    font-family: 'Inter',  Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+    background-color: #000513;
+    color: #b3b3b3;
+    /* Light Mode Color = black */
+    /* Background-color = white */
+}
+
+.button1 {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: 'Inter';
+    background-color: rgb(208, 208, 208);
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.button1:hover {
+    background-color: #15a975;
+}
+
+h1 {
+    color: #a7a7a7;
+    /* Light Mode = BLACK */
+}
+
+h2 {
+    color: #c4c4c4;
+    /* Light Mode = BLACK*/
+}
+
+a {
+    padding: 5px;
+    border-radius: 6px;
+    color: #007acc;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    background-color: #d9d9d9;
+    color: #094189;
+}
+
+.thin-divider {
+    border: none;
+    height: 1px;
+    /* background-color: #ccc; */
+    background-color: #555555;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: circle;
+    padding-left: 5;
+}
+
+ul li {
+    margin-bottom: 7px;
+}
+
+pre {
+    border-radius: 5px;       /* Rounded corners */
+    padding: 5px;            /* Add padding inside the block */
+    overflow-x: auto;         /* Allow horizontal scrolling for long lines */
+    margin: 20px 0;           /* Add spacing around the block */
+}
+
+/* Style for the code block */
+code {
+    font-family: 'Consolas', 'Courier New', Courier, monospace; /* Monospace font */
+    font-size: 14px;
+}
