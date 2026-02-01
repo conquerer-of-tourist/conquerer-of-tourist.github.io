@@ -7,7 +7,11 @@ I started out working with Python in about 4th grade. I took a couple of Grok Le
 
 One quote from a friend I will never forget: "I was thinking about math until I walked into a wall." (I will neither forget the friend nor the quote)
 
-## Social Status
+## Achievements
+* AIME Qualifier
+* USACO Silver Division (with 67 points on Jan Contest 1, 2026)
+
+## Other Stuff
 This section shouldn't be here. Oops. I am the (unofficial) lead developer for the BASIS Indepdendent Bellevue school newspaper (On a Monthly BASIS)'s website. Outside of programming, I also do math (AIME qualifier) and I swim competitively on PRO (PN), formerly on WEST (PN), CSC (PN), SMAC (PN), and EAST (PN). In 5th and 6th grade, I participated in the VEX IQ and V5RC robotics competitions.
 
 I used to be really into art/drawing, planes, and I played the piano a lot up until 6th grade.
