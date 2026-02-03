@@ -23,6 +23,20 @@ body {
   min-height: 100vh;
 }
 
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+code {
+  font-size: 1.05rem;
+}
+
 .page {
   min-height: 100vh;
   padding: 40px clamp(20px, 5vw, 72px);
@@ -56,22 +70,21 @@ body {
 .nav-button {
   text-decoration: none;
   color: var(--text);
-  font-weight: 600;
+  font-weight: 400;
+  font-variation-settings: "wght" 400;
   padding: 10px 22px;
   border-radius: 999px;
   background: transparent;
   box-shadow: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: color 0.4s ease, font-weight 0.4s ease, font-variation-settings 0.4s ease;
 }
 
-.nav-button:hover {
-  color: #f26a7a;
-  transform: translateY(-1px);
-}
-
+.nav-button:hover,
+.nav-button:focus-visible,
 .nav-button:active {
-  transform: translateY(1px) scale(0.98);
   color: #f26a7a;
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
 }
 
 .content {
@@ -93,7 +106,7 @@ body {
 .hero p {
   color: var(--text-muted);
   font-size: 1.05rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .hero-header {
