@@ -1,11 +1,10 @@
 :root {
-  --bg: #ffffff;
-  --bg-accent: #ffffff;
-  --content-width: 1200px;
+  --bg: #0b1220;
+  --bg-accent: #0f1d35;
   --glass: rgba(255, 255, 255, 0.16);
   --glass-edge: rgba(255, 255, 255, 0.45);
-  --text: #111111;
-  --text-muted: #2b2b2b;
+  --text: #e8edf6;
+  --text-muted: rgba(232, 237, 246, 0.7);
   --shadow-dark: rgba(5, 10, 22, 0.65);
   --shadow-light: rgba(255, 255, 255, 0.35);
 }
@@ -19,7 +18,10 @@
 body {
   font-family: "Inter", system-ui, sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(71, 147, 255, 0.45), transparent 60%),
+    radial-gradient(900px 600px at 80% 10%, rgba(255, 188, 117, 0.35), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-accent));
   min-height: 100vh;
 }
 
@@ -34,23 +36,21 @@ body {
 .site-header {
   display: flex;
   justify-content: center;
-  position: sticky;
-  top: 20px;
-  z-index: 10;
 }
 
 .glass-nav {
-  display: flex;
-  justify-content: flex-start;
+  display: inline-flex;
   gap: 16px;
   padding: 12px 18px;
   border-radius: 999px;
-  width: min(100%, var(--content-width));
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 18px 30px var(--shadow-dark),
+    inset 0 1px 0 var(--glass-edge),
+    inset 0 -6px 12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .nav-button {
@@ -59,34 +59,41 @@ body {
   font-weight: 600;
   padding: 10px 22px;
   border-radius: 999px;
-  background: transparent;
-  box-shadow: none;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset 0 2px 6px rgba(255, 255, 255, 0.25),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.35),
+    0 8px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .nav-button:hover {
-  color: #f26a7a;
+  background: rgba(255, 255, 255, 0.22);
   transform: translateY(-1px);
+  box-shadow:
+    inset 0 2px 8px rgba(255, 255, 255, 0.35),
+    inset 0 -3px 10px rgba(0, 0, 0, 0.35),
+    0 12px 20px rgba(0, 0, 0, 0.35);
 }
 
 .nav-button:active {
   transform: translateY(1px) scale(0.98);
-  color: #f26a7a;
+  box-shadow:
+    inset 0 1px 6px rgba(0, 0, 0, 0.45),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.15);
 }
 
 .content {
-  max-width: var(--content-width);
-  width: min(100%, var(--content-width));
+  max-width: 880px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 36px;
 }
 
 .hero h1 {
   font-size: clamp(2.3rem, 5vw, 3.2rem);
   letter-spacing: -0.02em;
-  font-weight: 600;
   margin-bottom: 12px;
 }
 
@@ -96,49 +103,10 @@ body {
   line-height: 1.6;
 }
 
-.hero-header {
-  position: relative;
-  overflow: hidden;
-  padding: 32px 28px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
-}
-
-.hero-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("chongqing.jpg") center/cover no-repeat;
-  filter: blur(6px);
-  transform: scale(1.05);
-  opacity: 0.35;
-  z-index: 0;
-}
-
-.hero-header > * {
-  position: relative;
-  z-index: 1;
-}
-
 .placeholder {
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 24px;
   color: var(--text-muted);
-}
-
-.placeholder h2 {
-  margin-bottom: 12px;
-}
-
-.site-footer {
-  margin-top: 12px;
-  padding: 18px 0 6px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  width: 100%;
-  color: #6b6b6b;
-  font-size: 0.95rem;
-  text-align: left;
 }
 
 @media (max-width: 600px) {
