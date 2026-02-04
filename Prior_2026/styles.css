@@ -25,6 +25,23 @@ body {
   min-height: 100vh;
 }
 
+mjx-container {
+  font-size: 115% !important;
+}
+
+ul,
+ol {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 1.6rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+li {
+  margin: 6px 0;
+}
+
 .page {
   min-height: 100vh;
   padding: 40px clamp(20px, 5vw, 72px);
