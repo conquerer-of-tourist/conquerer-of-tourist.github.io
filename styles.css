@@ -66,6 +66,7 @@ p {
   line-height: 1.5;
   text-align: justify;
   font-family: "CMU Serif", "Computer Modern", "Times New Roman", serif;
+  font-weight: 500;
 }
 
 ul,
@@ -76,11 +77,13 @@ ol {
   font-size: 1.05rem;
   line-height: 1.5;
   font-family: "CMU Serif", "Computer Modern", "Times New Roman", serif;
+  font-weight: 500;
 }
 
 li {
   margin: 6px 0;
   font-family: "CMU Serif", "Computer Modern", "Times New Roman", serif;
+  font-weight: 500;
 }
 
 code {
