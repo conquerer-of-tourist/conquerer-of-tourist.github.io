@@ -10,6 +10,38 @@
   --shadow-light: rgba(255, 255, 255, 0.35);
 }
 
+@font-face {
+  font-family: "CMU Serif";
+  src: url("fonts/cmu-serif-500-roman.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  src: url("fonts/cmu-serif-500-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  src: url("fonts/cmu-serif-700-roman.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CMU Serif";
+  src: url("fonts/cmu-serif-700-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,6 +65,7 @@ p {
   font-size: 1.05rem;
   line-height: 1.5;
   text-align: justify;
+  font-family: "CMU Serif", "Computer Modern", "Times New Roman", serif;
 }
 
 ul,
@@ -42,10 +75,12 @@ ol {
   padding-left: 1.6rem;
   font-size: 1.05rem;
   line-height: 1.5;
+  font-family: "CMU Serif", "Computer Modern", "Times New Roman", serif;
 }
 
 li {
   margin: 6px 0;
+  font-family: "CMU Serif", "Computer Modern", "Times New Roman", serif;
 }
 
 code {
