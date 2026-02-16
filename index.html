@@ -3,60 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website</title>
+  <title>Hengsheng Wang | Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page" id="home">
     <header class="site-header">
-      <nav class="glass-nav" aria-label="Primary">
-        <a class="nav-button" href="#home">Home</a>
-        <a class="nav-button" href="#about">About</a>
+      <nav class="top-nav" aria-label="Primary">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#readme">ReadME</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#credibility">Credibility</a>
       </nav>
     </header>
 
-    <main class="content" id="home">
-      <section class="hero hero-header">
-        <h1>Hi! I'm Hengsheng.</h1>
-        <p>This is my <code>github.io</code> page. Welcome! Here I put things about me, and for the third time, I will attempt to make this a sustained log of USACO and other competitive programming problems I have solved.</p>
-        <p>\[6 \cdot 239 = \boxed{1434.}\]</p>
+    <main class="profile-shell">
+      <aside class="profile-sidebar" aria-label="Profile summary">
+        <img
+          class="avatar"
+          src="auxiliary/photos/inverse_ackermann.png"
+          alt="Profile avatar"
+          width="320"
+          height="320"
+        >
+
+        <h1 class="display-name">Hengsheng Wang</h1>
+        <p class="username">conquerer-of-tourist</p>
+
+        <p class="bio">Competitive Programming, Math. Student @ <b>BASIS Independent Bellevue.</b></p>
+
+        <div class="profile-links" aria-label="External links">
+          <a href="https://github.com/conquerer-of-tourist" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://codeforces.com/profile/hangboy" target="_blank" rel="noopener noreferrer">Codeforces</a>
+          <a href="https://www.instagram.com/conquerer_of_tourist/t" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </aside>
+
+      <section class="profile-main" aria-label="Profile content">
+        <section class="card" id="readme">
+          <div class="card-header">
+            <span class="eyebrow">conquerer of tourist / README</span>
+            <h2>About Me</h2>
+          </div>
+          <div class="readme-body">
+            <p>I am a student attending BASIS Independent Bellevue.</p>
+
+            <p>The time complexity of the Disjoint Set Union is modeled by the Inverse Ackermann function, which runs in approximately constant time:</p>
+            <p>\[\text{Time Complexity: } \mathcal{O}(1) \approx \alpha^{-1}\]</p>
+          </div>
+        </section>
+
+        <section class="repo-section" aria-label="Pinned repositories">
+          <h2 class="section-title">Pinned</h2>
+
+          <div class="repo-grid">
+            <article class="card repo-card" id="projects">
+              <div class="card-header">
+                <span class="eyebrow">projects</span>
+                <h3>Projects</h3>
+              </div>
+              <div class="readme-body">
+                <p>From the middle of January, 2026, I have been developing and improving our school's Newspaper website, since a functional website is a 100% necessary attribute.</p>
+
+                <p>For myself but also for the general benefit, I have worked for a long time on an extensive set of solutions for USACO and Codeforces problemsets. While working with these solutions, I'm also in the process of tailoring well-written explanations that can carefully deliver the solution and thinking process. (I'm inspired to do this because solving these problems was quite a very difficult endeavor)</p>
+
+                <p>As the school year goes on, I'm continuing to write study guides for middle school Biochemistry, Chemistry, Physics, US/World History, and other subjects. I'll talk about this in more depth later. Occasionally, I write in my journal, and I also started something called the "Radical Statement". More on that later, too.</p>
+              </div>
+            </article>
+
+            <article class="card repo-card" id="credibility">
+              <div class="card-header">
+                <span class="eyebrow">achievements + credibility</span>
+                <h3>Credibility</h3>
+              </div>
+              <div class="readme-body">
+                <p>Finally, I can put some legitimate things in here!</p>
+
+                <ul>
+                  <li>AIME Qualifier (8th Grade)</li>
+                  <li>USACO Silver Division (7th Grade) with <code>833</code> points.</li>
+                  <li>Western Zones Pacific Northwest Team (10&U)</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
-
-      <section id="about" class="placeholder">
-        <h2>About Me</h2>
-        <p>I am a student attending BASIS Independent Bellevue. I currently swim on PRO Swimming (PN), and formerly SMAC, CSC, WEST, and EAST (PN).</p>
-
-        <p>You may know me by conquerer-of-tourist or hangboy on Discord, Codeforces, and Instagram. You might also recognize me by my go-to icon of the Inverse Ackermann function, which models the time complexity of the implementation of the Disjoint Set Union. The equation:</p>
-        <p>\[\mathcal{O}(1) \approx \alpha^{-1}\]</p>
-      </section>
-
-      <section id="projects" class="placeholder">
-        <h2>Projects</h2>
-        <p>Recently, as of January 2026, I suggested to our school newspaper that they should have a website for people who want to revisit articles online. For about half a month, I have been deploying and improving the website. However, drawbacks of the plan include the complexity of committing and adding new features and articles. So, we may switch to a template website in the future.</p>
-
-        <p>For my own usage but also for the general good (and as to make a contribution to society), I have worked for a long time on an extensive set of solutions that I wrote as practice for the USACO as well as Codeforces round problems. With these solutions, I'm also in the process of tailoring well-written explanations that can carefully deliver the solution and thinking process.</p>
-
-        <p>From 2024, I have written multiple Study Guides for general middles school topics, including Chemistry, Physics, Biochemistry, History, and more. More information will be added later about this.</p>
-
-        <p>For fun, whenever I get the time to, I am work on a project called "Radical Arguments." I will probably publish the full compilation of TeX PDFs at the end of 2026.</p>
-      </section>
-      <section id="achievements">
-        <h2>Credibility</h2>
-        <p>Now that we have arrived in 2026, I can finally put some legit stuff in here!</p>
-        <ul>
-          <li>AIME Qualifier (8th Grade)</li>
-          <li>USACO Silver Division (7th Grade)</li>
-          <li>Western Zones Team Member (PN) (10y)</li>
-        </ul>
-      </section>
-      <footer class="site-footer">
-        <p>© 2026 by Hengsheng Wang · All Rights Not Reserved</p>
-      </footer>
     </main>
+
+    <footer class="site-footer">
+      <p>© 2026 by Hengsheng Wang · All Rights Not Reserved</p>
+    </footer>
   </div>
 </body>
 </html>
