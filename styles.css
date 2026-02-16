@@ -6,7 +6,7 @@
   --line: #161a20;
   --link: #f1f3f5;
   --link-hover: #f08080;
-  --copy-size: clamp(0.72rem, 1.2vw, 0.84rem);
+  --copy-size: clamp(0.82rem, 1.2vw, 0.94rem);
 }
 
 *,
@@ -38,7 +38,7 @@ body {
 .katex,
 .katex-display,
 .katex * {
-  color: #d2d7de;
+  color: #c3c3c3;
 }
 
 button,
@@ -50,10 +50,11 @@ textarea {
 
 .page {
   width: min(820px, 100% - 56px);
-  margin: 72px auto 64px;
+  margin: 116px auto 64px;
 }
 
 .page > * {
+  width: 100%;
   opacity: 0;
   transform: translateY(14px);
   animation: greeting-enter 620ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
@@ -86,17 +87,28 @@ textarea {
 
 h1 {
   margin: 0 0 24px;
-  font-size: clamp(1.33rem, 2.73vw, 2.17rem);
+  font-size: clamp(1.43rem, 2.73vw, 2.27rem);
   line-height: 1.08;
   font-weight: 300;
   letter-spacing: 0.02em;
-  color: #eceef1;
+  color: #ffffff;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: clamp(0.68rem, 1vw, 0.76rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9399a3;
+  text-align: left;
 }
 
 p {
-  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 10px;
   font-size: var(--copy-size);
-  color: var(--muted);
+  color: rgb(133, 133, 133);
 }
 
 a {
@@ -113,17 +125,13 @@ a:focus-visible {
   color: var(--link-hover);
 }
 
-.intro p {
-  max-width: 690px;
-}
-
 .list-section {
   margin-top: 72px;
 }
 
 .label {
   margin: 0 0 18px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: #767b84;
 }
@@ -139,6 +147,8 @@ a:focus-visible {
   font-size: var(--copy-size);
   line-height: 1.5;
   color: var(--muted);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .list-section li + li {
@@ -146,13 +156,13 @@ a:focus-visible {
 }
 
 .list-section li span {
-  color: #6d727c;
+  color: rgb(133, 133, 133);
 }
 
 hr {
   margin: 82px 0 62px;
   border: 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid #2a313c;
 }
 
 .site-footer {
@@ -216,9 +226,9 @@ hr {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(120deg, #4168d4 0%, #00d289 100%);
+  background-image: linear-gradient(120deg, #d46d41 0%, #ee3333 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.6s ease;
   z-index: -1;
 }
 
@@ -235,7 +245,7 @@ hr {
 @media (max-width: 720px) {
   .page {
     width: min(820px, 100% - 34px);
-    margin-top: 46px;
+    margin-top: 78px;
   }
 
   .list-section {
@@ -254,4 +264,8 @@ hr {
   .footer-grid {
     width: 100%;
   }
+}
+
+.crimsondot {
+  color: #fd6565;
 }
