@@ -65,11 +65,31 @@ body {
   line-height: 1.45;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: -190px;
+  right: -190px;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(62, 123, 193, 0.256) 0%,
+    rgba(160, 205, 255, 0.1) 42%,
+    rgba(160, 205, 255, 0) 74%
+  );
+  z-index: 0;
+}
+
 mjx-container {
   font-size: 112% !important;
 }
 
 .page {
+  position: relative;
+  z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
   padding: 24px clamp(16px, 3vw, 34px) 48px;
@@ -84,62 +104,21 @@ mjx-container {
 
 .top-nav {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0;
+  align-items: center;
   border: 1px solid var(--border);
-  background: rgba(13, 17, 23, 0.85);
-  backdrop-filter: blur(5px);
+  background: rgba(13, 17, 23, 0.65);
+  backdrop-filter: blur(3px);
   border-radius: 30px;
-  padding: 10px 12px;
+  padding: 8px 10px;
   width: 100%;
   box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: border-color 0.25s ease, padding-bottom 0.25s ease;
-}
-
-.top-nav:hover,
-.top-nav:focus-within {
-  border-color: rgba(255, 255, 255, 0.85);
-  padding-bottom: 12px;
-}
-
-.nav-title {
-  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  color: var(--muted);
-  font-size: 0.92rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  min-height: 34px;
-  display: flex;
-  align-items: center;
-  padding-left: 8px;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-6px);
-  pointer-events: none;
-  transition: max-height 0.28s ease, opacity 0.22s ease, transform 0.22s ease;
-}
-
-.top-nav:hover .nav-links,
-.top-nav:focus-within .nav-links {
-  max-height: 240px;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
 }
 
 .nav-link {
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   color: var(--muted);
   text-decoration: none;
-  padding: 8px 10px 8px 18px;
+  padding: 8px 12px;
   border-radius: 30px;
   font-weight: 200;
   font-size: 0.92rem;
@@ -206,13 +185,30 @@ mjx-container {
 
 .profile-links a {
   display: block;
+  position: relative;
+  z-index: 0;
   color: var(--text);
   text-decoration: none;
   font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   padding: 10px 11px;
   background: transparent;
   font-size: 15px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.profile-links a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  background-image: linear-gradient(
+    to top right,
+    rgba(178, 62, 44, 0.327) 0%,
+    rgba(181, 80, 21, 0.464) 48%,
+    rgba(255, 205, 40, 0.348) 100%
+  );
+  transition: opacity 0.4s ease;
 }
 
 .profile-links a + a {
@@ -221,8 +217,12 @@ mjx-container {
 
 .profile-links a:hover,
 .profile-links a:focus-visible {
-  background: var(--accent-soft);
-  color: var(--accent);
+  color: #9ad8fc;
+}
+
+.profile-links a:hover::before,
+.profile-links a:focus-visible::before {
+  opacity: 1;
 }
 
 .profile-main {
@@ -362,10 +362,9 @@ li {
     width: 100%;
   }
 
-  .nav-title,
   .nav-link {
     font-size: 0.82rem;
-    padding: 8px 10px 8px 16px;
+    padding: 8px 10px;
   }
 
   .card {
