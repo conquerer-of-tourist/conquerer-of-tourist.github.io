@@ -123,6 +123,16 @@ a {
   margin-top: 18px;
 }
 
+.section-body mjx-container {
+  color: var(--text);
+}
+
+.section-body mjx-container[display="true"] {
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .card-list {
   display: grid;
   gap: 16px;
