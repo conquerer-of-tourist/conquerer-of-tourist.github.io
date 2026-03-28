@@ -1,4 +1,4 @@
-# Bob's Tower Defense Cards — Greedy + Simulation
+# CF Round 1086 (Div. 2) - Cyclists
 
 ## Rough Thinking Process
 
